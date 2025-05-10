@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="main-menu" class="overlay active">
+      <h1>🐍 Snake Game</h1>
+      <button id="start-btn">Start Game</button>
+      <button id="music-toggle-btn" class="music-toggle off">🔈 Music: Off</button>
+    </div>
+    <div id="game-ui" class="hidden">
+      <div class="score-bar"><span id="score">0</span></div>
+      <div id="game-board"></div>
+    </div>
+    <div id="game-over" class="overlay hidden">
+      <h2>Game Over!</h2>
+      <div class="final-score">Score: <span id="final-score">0</span></div>
+      <button id="restart-btn">Play Again</button>
+      <button id="menu-btn" class="menu-btn">Back to Menu</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
