@@ -10,10 +10,10 @@ const gameUI = document.getElementById('game-ui');
 const gameOverOverlay = document.getElementById('game-over');
 const musicToggleBtn = document.getElementById('music-toggle-btn');
 
-const collectSF = new Audio('main/collect.wav');
-const deathSF = new Audio('main/death.mp3');
-const buttonSF = new Audio('main/buttonSound.mp3');
-const musicSF = new Audio('main/music.mp3');
+const collectSF = new Audio('/collect.wav');
+const deathSF = new Audio('/death.mp3');
+const buttonSF = new Audio('/buttonSound.mp3');
+const musicSF = new Audio('/music.mp3');
 musicSF.loop = true;
 
 let snake, direction, nextDirection, food, gameInterval, score, isAlive, canChangeDirection, musicOn = false;
